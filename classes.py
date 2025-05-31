@@ -17,9 +17,6 @@ class Statek(ABC):
             self.zaloga = self.maxZaloga
         if self.zaloga < 0:
             self.zaloga  = 0
-
-
-
             
     def pokaz_info(self):
         return f"Typ statku: {self.__class__.__name__}\n" \
